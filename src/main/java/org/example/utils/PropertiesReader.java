@@ -1,13 +1,12 @@
 package org.example.utils;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ConfigReader {
+public class PropertiesReader {
 
-    static String path="";
+    static String path=System.getProperty("user.dir")+"/src/main/resources/config.properties";
     static Properties prop;
     public static String readKey(String key)
     {
